@@ -1,6 +1,7 @@
 
 /* Universal Styles */
 body {
+	margin: 0;
 	font-family: Helvetica, sans-serif;
 	color: DimGrey;
 	font-size: 16px;
@@ -8,15 +9,7 @@ body {
 
 body h1, h2, h3, h4, em {
 	color: #404040;
-}
-
-body a, a:visited {
-	text-decoration: none;
-	color: #404040;
-}
-
-body a:hover {
-	color: blue;
+	margin: 0;
 }
 
 
@@ -29,13 +22,21 @@ header {
 	background-color: white;
 	align-items: center;
 	z-index: 1;
-
 }
 
 header .logo {
 	display: flex;
 	height: 32px;
 	align-items: center;
+}
+
+header a, a:visited {
+	text-decoration: none;
+	color: #404040;
+}
+
+header a:hover {
+	color: blue;
 }
 
 .company {
@@ -69,14 +70,9 @@ header li {
 
 
 /* Main Content */
-body {
-	margin: 0;
-}
-
 .main {
 	padding-top: 64px;
 }
-
 
 .pic_container_horizontal {
 	display: flex;
@@ -89,40 +85,66 @@ body {
 }
 
 .spacer_bottom {
-	display: flex;
-	flex-grow: 1;
+	display: block;
+	height: 2.5em;
 }
 
-
-.start {
+.top_text {
+	font-weight: bold;
+	font-size: 24px;
+	color: #404040;
+}
+	
+.middle_text {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}	
+	
+.bg_grey {
 	background-color: Lightgrey;
 }
+
 
 .left_side {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 	width: 60%;
 	height: auto;
 	padding: 0px 24px 32px 24px;
 }
 
 
+/* Start Here Section */
+.start {
+	background-color: Lightgrey;
+	padding-top: 32px;
+}
+
+.left_side_pic {
+	height: auto;
+	overflow: hidden;
+}
+
 #no_margin_top {
 	margin-top: 0;
 }
 
 .info_left {
-	border-left: solid Lightgrey 2px;
+	padding-top: 32px;
 }
-	
+
 .info_left_quote_src {
+	display: flex;
+	align-items: flex-end;
+	height: 2em;
 	font-weight: bolder;
 }
 
 .left_side img {
-	max-height: 100%;
+	display: block;
+	max-height: auto;
 	max-width: 100%;
-	padding-top: 32px;
 }
 	
 .info_left_quote h1 {
@@ -134,12 +156,20 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 40%;
+	flex-grow: 1;
+}
+
+.right_side h1 {
+	margin-bottom: 0;
+}
+
+.right_side h4 {
+	margin: 1.5em 0;
 }
 
 .academy_info .right_side {
 		border-left: solid Lightgrey 2px;
 }
-
 
 .start_text h4 {
 	line-height: 1.6;
@@ -160,6 +190,7 @@ body {
 	align-items: center;
 }
 
+/* Academy Info Section */
 .academy_info .pic_container_horizontal	{
 	border-bottom: solid 4px Lightgrey;
 }
@@ -174,10 +205,6 @@ body {
 	max-height: auto%;
 }
 
-#bg_grey {
-	background-color: Lightgrey;
-}
-
 #info_left_quote_src {
 	font-size: 14px;
 	font-weight: bolder;
@@ -190,11 +217,13 @@ body {
 }
 
 .text_container h3 {
-	margin: 4px 0px;
+	margin: 0;
 }
 
-.text_container p {
-	margin: 4px 0px;
+#campus a {
+	font-weight: bold;
+	text-decoration: none;
+	color:#00BFFF	;
 }
 
 .container h1 {
@@ -202,6 +231,7 @@ body {
 	padding: 32px 0;
 	margin: 0;
 }
+
 
 /* Courses Section */
 .courses {
@@ -226,22 +256,13 @@ body {
 	max-width: 100%;
 }
 
-.couse-text h3 {
+.course-text h3 {
 	margin-top: 16px;
 	margin-bottom: 8px;
 }
 
-.top_text {
-	font-weight: bold;
-	font-size: 24px;
-	color: #404040;
-}
-	
-.middle_text {
-	padding-top: 8px;
-	padding-bottom: 8px;
-}	
-	
+
+/* Thesis Section */
 .thesis_list {
 	display: flex;
 }
@@ -257,6 +278,10 @@ body {
 	
 .thesis_list .left_side {
 	padding-bottom: 16px;
+}
+
+.video_container_vertical {
+	padding-bottom: 24px;
 }
 	
 video {
@@ -287,6 +312,15 @@ footer .legal {
 	text-align: right;
 	padding-right: 24px;
 	padding-left: 14px;
+}
+
+footer a, a:visited {
+	text-decoration: none;
+	color: #404040;
+}
+
+footer a:hover {
+	color: blue;
 }
 
 	
