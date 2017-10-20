@@ -13,22 +13,29 @@
 
 	<!-- Page Header -->
 	<header>
-		<div class="company">
-			<div class="logo">
-				<img src="./resources/images/ic-logo.svg">
+			<div class="company desktop">
+				<div class="logo">
+					<img src="./resources/images/ic-logo.svg">
+				</div>
+				<div class="name">
+					<span><em>COLMAR</em>ACADEMY</span>
+				</div>
 			</div>
-			<div class="name">
-				<span><em>COLMAR</em>ACADEMY</span>
-			</div>
+			<nav class="desktop">
+				<ul>
+					<li><a href=#campus>On Campus</a></li>
+					<li><a href=#online>Online</a></li>
+					<li><a href=#for_companies>For Companies</a></li>
+					<li><a href="#">Sign in</a></li>
+				</ul>
+			</nav>
+		
+		<div class="mobile">
+			<img src="./resources/images/ic-logo.svg">
+			<img src="./resources/images/ic-on-campus.svg">
+			<img src="./resources/images/ic-online.svg">
+			<img src="./resources/images/ic-login.svg">
 		</div>
-		<nav>
-			<ul>
-				<li><a href=#campus>On Campus</a></li>
-				<li><a href=#online>Online</a></li>
-				<li><a href=#for_companies>For Companies</a></li>
-				<li><a href="#">Sign in</a></li>
-			</ul>
-		</nav>
 	</header>
 	
 	<!-- Main Content -->
@@ -38,7 +45,8 @@
 				<img src="./resources/images/banner.jpg" alt="Start Here Pic (Not Supported)">
 			</div>
 			<div class="right_side">
-				<h1>Learn something<br>new everyday</h1>
+				<h1>Learn something</h1>
+				<h1>new everyday</h1>
 				<h4>
 					Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.
 				</h4>
@@ -86,7 +94,7 @@
 						<img src="./resources/images/information-campus.jpg" alt="Campus Small Pic (Not Supported)">
 					</div>
 					<div class="text_container">
-						<h3>Our campuus</h3>
+						<h3>Our campus</h3>
 						<div class="middle_text">
 							Find which campus is close by you
 						</div>
@@ -194,7 +202,20 @@
 			</div>
 		</div>
 		
-		<!-- Exhibit Section -->
+		<div class="courses_mobile">
+			<h1>Start learning</h1>
+			<ul>
+				<li>Software engineering</li>
+				<li>Computer art</li>
+				<li>Design</li>
+				<li>Data</li>
+				<li>Business</li>
+				<li>Margeting</li>
+			</ul>
+		</div>
+		
+		
+		<!-- Thesis Section -->
 		<div class="container thesis">
 			<div>
 				<h1>Thesis exhibit</h1>
@@ -207,7 +228,7 @@
 							Thesis video (Not Supported)
 						</video>
 					</div>
-					<div>
+					<div class="thesis_text">
 						<h2>Reimagine urban</h2>
 						<div class="middle_text">
 							"Curabitur vitae libero in ipsum porttitor consequat.  Aliquam et commodo
@@ -247,7 +268,7 @@
 	<!-- Page Footer -->
 	<footer>
 		<span class="copyright">&copy 2016 Colmar Academy.  All rights reserved</span>
-		<span><a href="#">Terms</a></span>
+		<span id="terms"><a href="#">Terms</a></span>
 		<span class="legal"><a href="#">Privacy</a></span>
 	</footer>
 	

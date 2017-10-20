@@ -14,6 +14,10 @@ body h1, h2, h3, h4, em {
 
 
 /* Header */
+header .mobile {
+	display: none;
+}
+
 header {
 	display: flex;
 	width: 100%;
@@ -66,6 +70,27 @@ header li {
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 14px;
+}
+
+/* Header Section for Mobile */
+@media only screen and (max-width: 480px) {
+	header {
+		position: absolute;
+	}
+
+	header .desktop {
+		display: none;
+	}
+
+	
+	header .mobile {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		height: 64px;
+		padding: 0 42px;
+	}
+
 }
 
 
@@ -190,6 +215,50 @@ header li {
 	align-items: center;
 }
 
+
+/* Start Here Section for Mobile */
+@media only screen and (max-width: 480px) {
+	.start {
+		padding-top: 0;
+	}
+	
+	.pic_container_horizontal {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		}
+	
+	.left_side {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.start img {
+		padding-bottom: 32px;
+	}
+	
+	.right_side {
+		width: 100%;
+		margin: 0 0 32px 0px;
+	}
+	
+	.right_side h1 {
+		padding-left: 16px;
+	}
+		
+	.right_side h4 {
+		margin-top: 32px;
+		margin-bottom: 24px;
+		padding-left: 16px;
+	}
+	
+	.start_here {
+		margin: 0 16px;
+
+	}
+}
+
+
 /* Academy Info Section */
 .academy_info .pic_container_horizontal	{
 	border-bottom: solid 4px Lightgrey;
@@ -223,7 +292,7 @@ header li {
 #campus a {
 	font-weight: bold;
 	text-decoration: none;
-	color:#00BFFF	;
+	color:#00BFFF;
 }
 
 .container h1 {
@@ -233,7 +302,74 @@ header li {
 }
 
 
+/* Academy Info Section for Mobile */
+@media only screen and (max-width: 480px) {
+	.pic_container_horizontal .info_left {
+		display: none;
+	}
+	
+	#campus .pic_container_horizontal {
+		align-items: flex-start;
+	}
+	
+	.pic_small {
+		display: flex;
+		justify-content: center;
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+	
+	.academy_info .pic_container_horizontal	{
+		border: none;
+		width: 100%;
+		margin: 0;
+}
+	
+	.academy_info .right_side {
+		border: none;
+		justify-content: center;
+		margin: 0;
+	}
+	
+	.text_container {
+		padding: 32px 0 64px 32px;
+	}
+	
+	.spacer_top {
+		height: 16px;
+	}
+	
+	.spacer_bottom {
+		display: none;
+	}
+	
+	.pic_small img {
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 0 16px;
+		overflow: hidden;
+	}
+
+	.academy_info .bg_grey {
+		background-color: white;
+		
+	}
+	
+	.bg_grey .text_container {
+		padding-bottom: 32px;
+	}
+
+}
+	
+
 /* Courses Section */
+.courses_mobile {
+	display: none;
+}
+
 .courses {
 	background-color: Lightgrey;
 }
@@ -262,6 +398,49 @@ header li {
 }
 
 
+/* Courses Section for Mobile */
+@media only screen and (max-width: 480px) {
+	.courses {
+		display: none;
+	}
+	
+	.courses_mobile {
+		display: block;
+	}
+	
+
+	.courses {
+		text-align: center;
+		border: 0 16px 0 16px;
+		width: 90%;
+	}
+	
+	.courses_mobile h1 {
+		text-align: center;
+		padding-top: 32px;
+		border-top: solid Lightgrey 1px;
+	}
+
+	.courses_mobile ul {
+		padding: 0 16px;
+		margin-bottom: 32px;
+	}
+	
+	.courses_mobile li {
+		display: flex;
+		flex-direction: column;
+		color: #555555;
+		font-weight: bold;
+		font-size: 20px;
+		background-color: Lightgrey;
+		padding: 16px 0 24px 16px;
+		margin-top: 8px; 
+	}
+	
+	
+}
+	
+	
 /* Thesis Section */
 .thesis_list {
 	display: flex;
@@ -289,6 +468,29 @@ video {
 	height: auto;
 }
 	
+/* Thesis Section for Mobile */
+@media only screen and (max-width: 480px) {
+	.thesis_list .right_side {
+		display: none;
+	}
+	
+	.thesis_list .thesis_text {
+		display: none;
+	}
+	
+	.thesis_list .left_side {
+		padding: 0;
+	}
+	.thesis {
+		border-top: solid Lightgrey 1px;
+	}
+	
+	.thesis h1 {
+		padding-bottom: 16px;
+	}
+	
+}
+	
 
 /* Footer */	
 footer {
@@ -297,6 +499,7 @@ footer {
 	border-top: solid 2px Lightgrey;
 	padding-top: 16px;
 	padding-bottom: 46px;
+	color: #404040;
 	font-size: 12px;
 	font-weight: bold;
 }
@@ -304,7 +507,6 @@ footer {
 footer .copyright {
 	display: flex;
 	flex-grow: 1;
-	text-align: left;
 	padding-left: 24px;
 }
 
@@ -324,3 +526,24 @@ footer a:hover {
 }
 
 	
+/* Footer Section for Mobile */
+@media only screen and (max-width: 480px) {
+	footer {
+		padding-bottom: 16px;
+		border: 0;
+	}
+	
+	footer .copyright {
+		padding-left: 0;
+		justify-content: center;
+	}
+	
+	footer .legal {
+		display: none;
+	}
+
+	#terms {
+		display: none;
+	}
+	
+}
